@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>My Amazing Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -18,33 +18,42 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Explore amazing products and buy securely through PayPal!</p>
+        <div class="home-container">
+            <h1>Welcome to the Future</h1>
+            <p>Explore amazing products and buy them securely with PayPal.</p>
+            <button onclick="window.location.href='#buy'">Shop Now</button>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email us at: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
-        <form action="#" method="post">
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea placeholder="Your Message" required></textarea><br>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We're here to help! Reach out to us.</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Buy Section -->
     <section id="buy">
-        <h2>Buy Our Product</h2>
-        <p>Price: $50</p>
-        <!-- PayPal Button -->
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
-            <button type="submit">Buy Now with PayPal</button>
-        </form>
+        <div class="buy-container">
+            <h2>Buy Our Product</h2>
+            <p>Price: $50</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                <button type="submit">Buy Now with PayPal</button>
+            </form>
+        </div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 My Amazing Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-<link rel="stylesheet" href="styles.css">
